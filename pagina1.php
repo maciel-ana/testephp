@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,16 @@
 </head>
 <body>
     <?php
-       echo "<p>Boa tarde a todos<p>"
+        //Declaração de variáveis
+            $hora = date("H");
+        
+        if($hora < 12){
+            echo "<p>" .$hora. "hs. Bom Dia!</p>";
+        } else if ($hora < 18){
+            echo "<p>" .$hora. "hs. Boa Tarde!</p>";
+        } else{
+            echo "<p>" .$hora. "hs. Boa Noite!</p>";
+        }
 
     ?>
 </body>
